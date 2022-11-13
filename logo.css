@@ -1,0 +1,139 @@
+/* --------------LOGO-----------*/
+.webnopay-container{
+    position: relative;
+    width: min-content;
+    
+}
+
+.webnopay{
+    font-family: RobotoR;
+    font-size: 1.75rem;
+    color: #6d2077;
+    margin: 0;
+}
+
+.pelota1{
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: .1em;
+    
+    background-color: #d00070;
+    border-radius: 50px;
+    position: absolute;
+    top: 35%;
+    left: -3%;
+}
+
+.pelota2{
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: .1em;
+    
+    background-color: #d00070;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 15%;
+    right: -1%;
+}
+
+.pelota3{
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: .05em;
+    
+    background-color: #009cdd;
+    border-radius: 50px;
+    position: absolute;
+    top: 35%;
+    left: -3%;
+}
+
+.pelota4{
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: .05em;
+    
+    background-color: #6d2077;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 15%;
+    right: -5%;
+}
+
+.notransbank{
+    font-family: RobotoL;
+    font-size: .8rem;
+    color: #d00070;
+    margin: 0;
+}
+
+.logo-container{ /*Se puede cambair la clase a "logo" para que quede centrado*/
+    align-items: flex-start;
+}
+/* --------------LOGO-----------*/
+
+/*------onepay----------*/
+.pelota5{
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: .1em;
+    
+    background-color: black;
+    border-radius: 50px;
+    position: absolute;
+    top: 35%;
+    left: -3%;
+}
+.pelota6{
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: .1em;
+    
+    background-color: black;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 15%;
+    right: -1%;
+}
+.pelota7{
+    width: .5px;
+    height: .5px;
+    margin: 0;
+    padding: .03em;
+    
+    background-color: black;
+    border-radius: 50px;
+    position: absolute;
+    top: 35%;
+    left: -3%;
+}
+.pelota8{
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: .05em;
+    
+    background-color: black;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 15%;
+    right: -5%;
+}
+.notransbank-onepay{
+    font-family: RobotoL;
+    font-size: .5rem;
+    color: black;
+    margin: 0;
+}
+.onepay-logo{
+    font-family: RobotoL;
+    font-size: 1.35rem;
+    color: black;
+    margin: 0;
+}
