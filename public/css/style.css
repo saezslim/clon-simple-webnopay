@@ -4,17 +4,17 @@ html, body{ margin: 0; padding: 0; font-family: 'Roboto', sans-serif;}
 
 @font-face {
     font-family: RobotoR;
-    src: url(./fonts/Roboto-Regular.ttf);
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
     font-family: RobotoL;
-    src: url(./fonts/Roboto-Light.ttf);
+    src: url(../fonts/Roboto-Light.ttf);
 }
 
 @font-face {
     font-family: RobotoB;
-    src: url(./fonts/Roboto-Bold.ttf);
+    src: url(../fonts/Roboto-Bold.ttf);
 }
 
 .row{
