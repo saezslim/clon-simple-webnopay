@@ -120,6 +120,7 @@ html, body{ margin: 0; padding: 0; font-family: 'Roboto', sans-serif;}
     text-align: center;
     font-family: RobotoB;
     color: #0096c4;
+    cursor: pointer;
 }
 
 .enlaces__seguridad > *{
@@ -133,6 +134,7 @@ html, body{ margin: 0; padding: 0; font-family: 'Roboto', sans-serif;}
 .enlaces__span{
     font-family: RobotoB;
     color: #0096c4;
+    cursor: pointer;
 }
 
 @media (min-width: 390px){
