@@ -1,0 +1,142 @@
+.header-tarjetas{
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.header-tarjetas > h3 {
+    /* width: calc(50% + 3rem); */
+    width: 100%;
+    font-size: .95rem;
+    text-align: center;
+}
+
+/* FLECHITA */
+
+.flechita{
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: transform 350ms ease-in-out;
+}
+
+.flechita:hover{
+    transform: scale(1.15);
+}
+
+.flechita::after,
+.flechita::before{
+    content: '';
+    position: absolute;
+    background-color: #6b196b;
+    border-radius: 5px;
+    width: .5rem;
+    height: 2.1px;
+}
+
+.flechita::before{
+    transform: rotate(-45deg);
+    top: 40%;
+    left: 50%;
+    
+}
+
+.flechita::after{
+    transform: rotate(45deg);
+    top: 50%;
+    left: 50%;
+}
+/* FIN FLECHITA */
+
+.hidden{
+    display: none;
+}
+/* .page-1{
+    opacity: 1;
+    transition: opacity 75ms linear;
+}
+.primer-transicion{
+    opacity: 0;
+} */
+
+.tarjetas{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.tarjetita{
+    width: 100%;
+    max-width: 267.109px;
+    background-color: hsl(205, 70%, 70%, .2);
+    padding: 1.1em 1.25em;
+    color: hsl(205, 0%, 0%, .3);
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.tarjetita img {
+    filter: brightness(0%), opacity(.3);
+}
+
+.footer-tarjetita {
+    justify-content: space-between;
+}
+
+.form-tarjetita,
+.numero-tarjetita{
+    width: 100%;
+}
+
+.form-tarjetita{
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    position: relative;
+}
+
+.form-tarjetita label{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    font-size: .6rem;
+    color: hsl(205, 0%, 0%, .5);
+    font-weight: 700;
+    
+}
+
+.numero-tarjetita{
+    border: 1px solid hsl(205, 0%, 0%, .3);
+    border-radius: 5px;
+    padding: .4em 1.25em;
+    max-height: 46px;
+}
+
+.numero-tarjetita input{
+    all: unset;
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.numero-tarjetita input::placeholder{
+    color: hsl(205, 0%, 0%, .3);
+}
+
+
+.form-tarjetita button{
+    background-color: #6b196b;
+    font-weight: 700;
+    color: white;
+    height: 46px;
+    max-height: 46px;
+    width: 100%;
+    padding: .4em 1.25em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-tarjetita button:hover{
+    filter: brightness(120%);
+}

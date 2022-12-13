@@ -135,6 +135,7 @@ html, body{ margin: 0; padding: 0; font-family: 'Roboto', sans-serif;}
     font-family: RobotoB;
     color: #0096c4;
     cursor: pointer;
+    
 }
 
 @media (min-width: 390px){
@@ -144,4 +145,24 @@ html, body{ margin: 0; padding: 0; font-family: 'Roboto', sans-serif;}
         padding: 1.5em;
         box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.35);
     }
+}
+
+.metodo-btn{
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+
+.metodo-btn > div{
+    width: 100%;
+}
+
+.metodoPago{
+    width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

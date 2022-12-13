@@ -8,6 +8,7 @@
     <title>WebNoPay</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/tarjetas.css">
 </head>
 
 <body>
@@ -18,6 +19,7 @@
     </header>
     <main class="container main-container">
         <section class="logo-container row col">
+            <!-- Logo  -->
             <div class="logo">
                 <div class="webnopay-container row">
                     <div class="pelota1"></div>
@@ -30,53 +32,91 @@
                     <div class="pelota4"></div>
                 </div>
             </div>
-        </section>
+        </section><!--  Fin Logo  -->
 
         <section class="seccionPago">
+            <div class="header-tarjetas  row page-1 hidden">
+                <!-- <div class="flechita .flechita-btn"></div> -->
+                <h3>Tarjetas</h3>
+            </div>
+
             <header class="datosPago row">
+
+                <!-- Datos de la compra -->
                 <div class="tienda">
                     <p>Estás pagando en:</p>
                     <h2>Siglo XXI</h2>
                 </div>
                 <div class="monto">
                     <p>Monto a pagar:</p>
-                    <h2 id="montoTotal">$ <%= total %></h2>
+                    <h2 id="montoTotal">$ <%= total %>
+                    </h2>
                 </div>
-            </header>
-            <main class="metodoPago">
-                <p class="metodoPago__p">Selecciona tu medio de pago:</p>
-                <div class="tarjetas row card">
-                    <img src="./img/tarjeta.png" alt="tarjeta" >
-                    <div class="tarjetas__texto">
-                        <h2 class="tarjetas__title">Tarjetas</h2>
-                        <p class="tarjetas__p">Débito, Prepago</p>
-                    </div>
-                </div>
-                <div class="onepay row card">
-                    <img src="./img/codigo-qr.png" alt="qr" >
-                    <div class="logo">
-                        <div class="webnopay-container row">
-                            <div class="pelota5"></div>
-                            <h1 class="onepay-logo">onepay</h1>
-                            <div class="pelota6"></div>
+            </header><!-- Fin de Datos de la compra -->
+
+            <main class="col">
+                <section class="metodoPago page-1">
+                    <!-- Método de pago, pantalla 1 -->
+                    <p class="metodoPago__p">Selecciona tu medio de pago:</p>
+                    <button class="row metodo-btn tarjeta-btn">
+                        <div class="tarjetas row card">
+                            <img src="./img/tarjeta.png" alt="tarjeta">
+                            <div class="tarjetas__texto">
+                                <h2 class="tarjetas__title">Tarjetas</h2>
+                                <p class="tarjetas__p">Débito, Prepago</p>
+                            </div>
                         </div>
-                        <div class="webnopay-container row">
-                            <div class="pelota7"></div>
-                            <h2 class="notransbank-onepay">notransbank</h2>
-                            <div class="pelota8"></div>
+                    </button>
+                    <button class="row metodo-btn">
+                        <div class="onepay row card">
+                            <img src="./img/codigo-qr.png" alt="qr">
+                            <div class="logo">
+                                <div class="webnopay-container row">
+                                    <div class="pelota5"></div>
+                                    <h1 class="onepay-logo">onepay</h1>
+                                    <div class="pelota6"></div>
+                                </div>
+                                <div class="webnopay-container row">
+                                    <div class="pelota7"></div>
+                                    <h2 class="notransbank-onepay">notransbank</h2>
+                                    <div class="pelota8"></div>
+                                </div>
+                            </div>
                         </div>
+                    </button>
+                </section> <!-- Fin Método de pago, pantalla 1 -->
+
+                <section class="tarjetas col page-1 page-2 hidden">
+                    <div class="tarjetita">
+                        <img src="./img/banco.png" alt="Banco">
+                        <p>XXXX XXXX XXXX XXXX</p>
+                        <footer class="footer-tarjetita row">
+                            <p>XX/XX</p>
+                            <img src="./img/tarjeta.png" alt="Tarjeta">
+                        </footer>
                     </div>
-                </div>
+                    <form action="" class="form-tarjetita col">
+                        <label for="">Número de tarjeta</label>
+                        <div class="numero-tarjetita row">
+                            <img src="./img/tarjeta.png" alt="">
+                            <input type="number" placeholder="XXXX XXXX XXXX XXXX">
+                        </div>
+                        <button class="continuar-btn">Continuar</button>
+                    </form>
+                </section>
             </main>
 
-            <section class="enlaces">
+            <footer class="enlaces">
                 <p class="enlaces__a">Anular compra y volver</p>
                 <div class="enlaces__seguridad row">
                     <img src="./img/escudo.png" alt="compra segura">
-                    <p>Transacción respaldada por notransbank. Revisa las <span class="enlaces__span">condiciones del servicio.</span> </p>
+                    <p>Transacción respaldada por notransbank. Revisa las <span class="enlaces__span">condiciones del
+                            servicio.</span> </p>
                 </div>
-            </section>
+            </footer>
         </section>
     </main>
+    <script src="./js/observes.js" ></script>
 </body>
+
 </html>
